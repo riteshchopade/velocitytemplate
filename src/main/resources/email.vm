@@ -1,0 +1,57 @@
+<p>Hello Team,</p>
+<p>Please find below trade processing test execution result.</p>
+<table style="height: 55px; width: 422px; border-color: #000000;" border="1" cellspacing="0" cellpadding="0">
+   <tbody>
+      <tr bgcolor="#D5EDAB">
+         <th style="width: 118px;">Project</th>
+         <th style="width: 172px;">Execution Scenario Number</th>
+         <th style="width: 118px;">Date</th>
+      </tr>
+      <tr>
+         <td style="width: 118px;">$model.projectName</td>
+         <td style="width: 172px;" align="center">$model.executionNo</td>
+         <td style="width: 118px;" align="center">$model.date</td>
+      </tr>
+   </tbody>
+</table>
+<p>&nbsp;</p>
+<p>Feature Report:</p>
+<table style="height: 92px; width: 608px;" border="1" cellspacing="0" cellpadding="0">
+   <tbody>
+      <tr>
+         <td style="width: 172px;">&nbsp;</td>
+         <td style="width: 226px;" colspan="6">Steps</td>
+         <td style="width: 207px;" colspan="3">&nbsp;Scenarios</td>
+      </tr>
+      <tr>
+         <td style="width: 172px;">&nbsp;Feature</td>
+         <td style="width: 10px;">Passed</td>
+         <td style="width: 53px;">Failed</td>
+         <td style="width: 36px;">Skipped</td>
+         <td style="width: 25px;">Pending</td>
+         <td style="width: 51px;">Undefined</td>
+         <td style="width: 51px;">&nbsp;Total</td>
+         <td style="width: 51px;">Passed</td>
+         <td style="width: 51px;">Failed</td>
+         <td style="width: 105px;">Total</td>
+      </tr>
+       #foreach( $featureReport in $model.featureReports )
+      <tr>
+         <td style="width: 172px;">$featureReport.feature</td>
+         <td style="width: 10px;">$featureReport.passedStep</td>
+         <td style="width: 53px;">$featureReport.failedStep</td>
+         <td style="width: 36px;">$featureReport.skippedStep</td>
+         <td style="width: 25px;">$featureReport.pendingStep</td>
+         <td style="width: 51px;">$featureReport.undefinedStep</td>
+         <td style="width: 51px;">$featureReport.totalStep</td>
+         <td style="width: 51px;">$featureReport.passedScenario</td>
+         <td style="width: 51px;">$featureReport.failedScenario</td>
+         <td style="width: 105px;">$featureReport.totalScenario</td>
+      </tr>
+      #end      
+   </tbody>
+</table>
+<p>&nbsp;</p>
+<p>For more information, please <a href="http://abc.com" target="_blank" rel="noopener">click here</a>.</p>
+<p>&nbsp;</p>
+<p>Thanks,<br/>OASYS QA Automation Team.</p>
